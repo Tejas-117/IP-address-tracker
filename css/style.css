@@ -1,0 +1,141 @@
+:root{
+   /* ## Colors */
+   --VeryDarkGray: hsl(0, 0%, 17%);
+   --DarkGray: hsl(0, 0%, 59%);
+}
+html{
+   font-size: 18px;
+}
+body{
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+   font-family: 'Rubik', sans-serif;
+}
+
+/* styled for desktops */
+.top-section{
+   background: url(../images/pattern-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 0.8rem 0;
+   text-align: center;
+   position: relative;
+   z-index: 1;
+}
+h1{
+   color: white;
+   font-weight: 400;
+   margin: 0;
+   padding: 2% 0;
+}
+
+.search-elements{
+   width:50vw;
+   margin: 0.5rem auto;
+}
+#search{
+   width: 80%;
+   height: 7vh;
+   padding-left: 15px;
+   border: none;
+   outline: none;
+   border-radius: 1rem 0 0 1rem;
+   font-size: 1rem;
+   cursor: pointer;
+}
+::placeholder{
+   font-family: inherit;
+   font-size: 0.9rem;
+   font-weight: 500;
+   color: var(--DarkGray);
+}
+.btn{
+   width: 2.5rem;
+   height: 7.5vh;
+   background-color: var(--VeryDarkGray);
+   outline: none;
+   border: none;
+   border-radius: 0 1rem 1rem 0;
+   cursor: pointer;
+   margin-top: 5px;
+   margin-left: -5px;
+}
+.btn:hover{
+   background-color: var(--DarkGray);
+}
+.btn:focus{
+   outline: 2px solid;
+}
+
+.row{
+   background-color: white;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 1rem;
+   margin: 3rem 10vw;
+   z-index: 1000;
+}
+.vertical {
+   border-left: 1px solid var(--DarkGray);
+   height: 10vh;
+   position: relative;
+   right: 25px;
+}
+.box{
+   width: 20vw;
+   display: block;
+   padding: 3% 0;
+   text-align: left;
+}
+span{
+   display: block;
+   margin: 0.3rem 0;
+   font-weight: 500;
+}
+.heading{
+   color: var(--DarkGray);
+   font-size: 1.5vw;
+   letter-spacing: 2px;
+}
+.value{
+   font-size: 2.5vw;
+   color: var(--VeryDarkGray);
+}
+
+#mapid{
+   height: 80vh;
+}
+
+/* for tablets and mobiles */
+@media only screen and (max-width: 700px){
+   .search-elements{
+      width: 80vw;
+   }
+   #search{
+      width: 70%;
+   }
+   ::placeholder{
+      font-size: 3.5vw;
+   }
+   .row{
+      flex-direction: column;
+   }
+   .box{
+      text-align: center;
+      width: 80%;
+      padding: 4% 0;
+   }
+   .vertical{
+      display: none;
+   }
+   .heading{
+      font-size: 0.7rem;
+   }
+   .value{
+      font-size: 1rem;
+   }
+}
