@@ -2,5 +2,3 @@
 *.xd
 *.fig
 .DS_Store
-
-config.js
