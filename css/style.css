@@ -36,13 +36,14 @@ h1{
 }
 #search{
    width: 80%;
-   height: 7vh;
+   height: 3rem;
    padding-left: 15px;
    border: none;
    outline: none;
    border-radius: 1rem 0 0 1rem;
    font-size: 1rem;
    cursor: pointer;
+   position: relative;
 }
 ::placeholder{
    font-family: inherit;
@@ -52,14 +53,17 @@ h1{
 }
 .btn{
    width: 2.5rem;
-   height: 7.5vh;
-   background-color: var(--VeryDarkGray);
+   height: 3.3rem;
+   background: url(../images/icon-arrow.svg), hsl(0, 0%, 17%);
+   background-repeat: no-repeat;
+   background-position: center;
    outline: none;
    border: none;
    border-radius: 0 1rem 1rem 0;
    cursor: pointer;
-   margin-top: 5px;
-   margin-left: -5px;
+   left: -5px;
+   top: 1.2rem;
+   position: relative;
 }
 .btn:hover{
    background-color: var(--DarkGray);
@@ -86,7 +90,7 @@ h1{
    right: 25px;
 }
 .box{
-   width: 20vw;
+   width: 15vw;
    display: block;
    padding: 3% 0;
    text-align: left;
