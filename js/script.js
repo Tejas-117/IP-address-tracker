@@ -37,7 +37,7 @@ const userISP = document.getElementById('isp');
 
 const displayUserInfo = (data) => {
    userIP.innerText = data.ip;
-   userLoaction.innerText = `${data.location.city},${data.location.region}, ${data.location.country}`;
+   userLoaction.innerText = `${data.location.city}, ${data.location.country}`;
    userTimeZone.innerText = `UTC${data.location.timezone}`;
    userISP.innerText = data.isp;
 }

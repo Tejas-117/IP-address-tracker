@@ -87,7 +87,7 @@ h1{
    border-left: 1px solid var(--DarkGray);
    height: 10vh;
    position: relative;
-   right: 25px;
+   left: 20px;
 }
 .box{
    width: 15vw;
@@ -108,6 +108,7 @@ span{
 .value{
    font-size: 2vw;
    color: var(--VeryDarkGray);
+   max-width: 100%;
 }
 
 #mapid{
